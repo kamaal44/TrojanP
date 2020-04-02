@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
-try:
-	import sys
-	import os
-	import socket
-	import _thread
-	import time
-	import shutil
-except:
-	print("Require Module Not Found \nTry pip3 install -r requirement.txt")
-	exit()
+import sys
+import os
+import socket
+import _thread
+import time
+import shutil
+
 	
 print('If you are not using Termux \nrun as root user')
 input('Press Any Key To Continue')
