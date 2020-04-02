@@ -1,16 +1,16 @@
 import sys
 import os
 
-if sys.platform in ['linux', 'linux2']:
-	if os.geteuid() != 0:
-		checkt = input("Are You Using Termux? (Y/n): ")	# check termux
-		if checkt == 'Y' or 'y' or 'yes' or 'Yes' or 'YES':
-			pass
-		else:
-			print('*Run As Root User*')
-			exit()
+	
+checkt = input("Are You Using Termux? (Y/n): ")	# check termux
+if checkt == 'Y' or 'y' or 'yes' or 'Yes' or 'YES':
+	pass
 else:
-    pass 
+	if os.geteuid() != 0:
+		print('*Run As Root User*')
+		exit()
+	else:
+	    pass 
 
 import socket
 import _thread
