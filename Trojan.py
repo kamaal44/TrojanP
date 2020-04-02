@@ -2,7 +2,7 @@ import sys
 import os
 
 if sys.platform in 'linux':
-	if os.geteuid() != 0:
+	if os.geteuid() == 0:
 		sys.exit("Run as root user!")
 	else:
 		pass
