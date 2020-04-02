@@ -1,9 +1,14 @@
 import sys
 import os
 
-if sys.platform in 'linux':
-	if os.geteuid() == 0:
-		sys.exit("Run as root user!")
+if sys.platform in ['linux', 'linux2']:
+	if os.geteuid() != 0:
+		checkt = input("Are You Using Termux? (Y/n): ")	# check termux
+		if checkt == 'Y' or 'y' or 'yes' or 'Yes' or 'YES':
+			pass
+		if checkt == 'N' or 'n' or 'No' or 'no' or 'NO':
+			sys.exit("*Run as root User!*")
+		
 	else:
 		pass
 
