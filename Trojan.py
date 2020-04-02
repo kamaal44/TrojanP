@@ -23,7 +23,7 @@ print(f"""{green}
 
     """)
 print(f"{red}This program need pyinstaller!")
-print("If you don't have pyinstaller please install pyinstaller first!!!!")
+print("If you don't have pyinstaller \nplease install pyinstaller first!!!!")
 hostl = input(f"{yellow}[+]Enter Host ")
 portl = int(input("[+]Enter Port "))
 fn = input("[+]Enter File Name To Create: ")
