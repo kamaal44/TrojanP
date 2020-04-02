@@ -6,12 +6,11 @@ if sys.platform in ['linux', 'linux2']:
 		checkt = input("Are You Using Termux? (Y/n): ")	# check termux
 		if checkt == 'Y' or 'y' or 'yes' or 'Yes' or 'YES':
 			pass
-		if checkt == 'N' or 'n' or 'No' or 'no' or 'NO':
+		elif checkt == 'N' or 'n' or 'No' or 'no' or 'NO':
 			sys.exit("*Run as root User!*")
 		
 	else:
-		pass
-
+		exit()
 else:
     pass 
 
