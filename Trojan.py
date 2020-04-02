@@ -1,22 +1,17 @@
-import sys
-import os
-
+#!/usr/bin/env python3
+try:
+	import sys
+	import os
+	import socket
+	import _thread
+	import time
+	import shutil
+except:
+	print("Require Module Not Found \nTry pip3 install -r requirement.txt")
+	exit()
 	
-checkt = input("Are You Using Termux? (Y/n): ")	# check termux
-if checkt == 'Y' or 'y' or 'yes' or 'Yes' or 'YES':
-	pass
-else:
-	if os.geteuid() != 0:
-		print('*Run As Root User*')
-		exit()
-	else:
-	    pass 
-
-import socket
-import _thread
-import time
-import shutil
-
+print('If you are not using Termux \nrun as root user')
+input('Press Any Key To Continue')
 # color
 green = '\033[1;32;1m'
 white = '\033[1;37;0m'
