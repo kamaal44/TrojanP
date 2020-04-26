@@ -29,7 +29,7 @@ print(f"""{green}
      ▐░▌     ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░▌    ▐░▌       ▐░▌▐░▌      ▐░░▌▐░▌          
       ▀       ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀      ▀         ▀  ▀        ▀▀  ▀""")
 print(f"""{green}
-[*] Developer => Unknow 4L13N
+[*] Developer => Swam Htet Aung
 [*] Country   => Myanmar
 [*] github    => https://github.com/swam-htet-a{white}
 -------------------****-------------------
